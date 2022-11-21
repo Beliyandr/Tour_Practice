@@ -8,3 +8,5 @@ menuBottom.addEventListener("click", (e) => {
     document.body.style.overflow = "visible";
   }
 });
+
+const text = 10;
