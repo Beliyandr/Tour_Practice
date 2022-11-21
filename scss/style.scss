@@ -1,0 +1,25 @@
+//Подключение переменных
+@import "variables";
+
+// Подключение базовых настроек
+@import "settings";
+@import "normalize";
+
+//Подключение стилей для отдельных блоков
+@import "blocks/header";
+@import "blocks/breadcrumb";
+
+@import "blocks/hotel";
+@import "blocks/newsletter";
+@import "blocks/reviews";
+@import "blocks/activities";
+@import "blocks/footer";
+
+@import "blocks/modal";
+
+@import "blocks/grid";
+//Swiper
+@import "blocks/swiper-hotel";
+
+//Подключение стилей для адаптива
+@import "media";

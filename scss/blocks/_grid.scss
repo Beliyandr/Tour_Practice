@@ -1,0 +1,16 @@
+.grid-practice {
+  padding-bottom: 50px;
+}
+.grid {
+  border: 1px solid;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 200px 400px;
+  //   grid-auto-columns: min-content;
+}
+.grid__element {
+  padding: 10px;
+  &:nth-child(2n) {
+    background-color: #f1f1f1;
+  }
+}

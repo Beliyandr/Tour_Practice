@@ -1,0 +1,77 @@
+.newsletter {
+  position: relative;
+  background-image: url(../../img/newsletter-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 98px 15px 87px 15px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 34, 61, 0.8);
+  }
+
+  &-wrapper {
+    position: relative;
+    max-width: 732px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: $ligth;
+    &_strong {
+      color: $ligth;
+      display: block;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 45px;
+      text-transform: uppercase;
+    }
+  }
+}
+.subscribe {
+  position: relative;
+  width: 355px;
+  height: 55px;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #bdbdbd;
+    padding: 19px 75px 19px 33px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 65px;
+    height: 100%;
+    padding: 20px 18px;
+    border: none;
+    background-color: $primary;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: $ligth;
+    cursor: pointer;
+  }
+}
