@@ -1,3 +1,7 @@
+const text = 10;
+const text1 = 10;
+const text2 = 20;
+
 let menuBottom = document.querySelector(".menu-button");
 let menu = document.querySelector(".navbar-bottom");
 menuBottom.addEventListener("click", (e) => {
@@ -9,4 +13,7 @@ menuBottom.addEventListener("click", (e) => {
   }
 });
 
-const text = 10;
+const text3 = 10;
+const text4 = 10;
+const text5 = 10;
+const text6 = 10;
