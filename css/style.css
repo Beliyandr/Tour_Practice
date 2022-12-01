@@ -433,6 +433,7 @@ template {
 
 .logo {
   max-width: 177px;
+  cursor: pointer;
 }
 
 .search {
@@ -462,6 +463,7 @@ template {
   top: 0;
   border: none;
   background: #ec1f46;
+  cursor: pointer;
 }
 
 .user {
@@ -756,6 +758,140 @@ template {
   cursor: pointer;
 }
 
+.tabs {
+  padding: 60px 0px;
+}
+.tabs__content {
+  display: flex;
+}
+@media (max-width: 991px) {
+  .tabs__content {
+    flex-direction: column;
+  }
+}
+.tabs__images {
+  flex: 1 1 750px;
+}
+@media (max-width: 991px) {
+  .tabs__images {
+    order: 2;
+    max-height: 400px;
+  }
+}
+.tabs__images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tabs__change {
+  flex: 0 0 350px;
+  min-height: 500px;
+  max-height: 700px;
+  overflow-y: auto;
+  padding: 30px 15px;
+  background-color: #0a223d;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .tabs__change {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    align-items: center;
+    min-height: 100px;
+  }
+}
+.tabs__title {
+  margin-bottom: 30px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.25;
+}
+@media (max-width: 991px) {
+  .tabs__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 991px) {
+  .tabs__items {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 991px) {
+  .tabs__items {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.tabs__item {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding: 15px 5px 15px 15px;
+  transition: all 0.2s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+}
+.tabs__item_active {
+  background-color: #ec1f46;
+  border: 1px solid white;
+}
+.tabs__item:hover {
+  background-color: #ec1f46;
+  border: 1px solid white;
+}
+@media (max-width: 991px) {
+  .tabs__item {
+    padding: 15px;
+    text-align: center;
+  }
+}
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.show-f {
+  display: flex;
+}
+
+.fade {
+  -webkit-animation: fade 1.5s;
+          animation: fade 1.5s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .reviews {
   padding: 40px 0 70px 0;
 }

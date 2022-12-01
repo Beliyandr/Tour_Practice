@@ -1,0 +1,125 @@
+.tabs {
+  padding: 60px 0px;
+  &__wrapper {
+  }
+  &__content {
+    display: flex;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+  &__images {
+    flex: 1 1 750px;
+    @media (max-width: 991px) {
+      order: 2;
+      max-height: 400px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__change {
+    flex: 0 0 350px;
+    min-height: 500px;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 30px 15px;
+    background-color: $dark;
+    color: $ligth;
+
+    @media (max-width: 991px) {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      align-items: center;
+      min-height: 100px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+    @media (max-width: 991px) {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+
+  &__items {
+    @media (max-width: 991px) {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 991px) {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 15px 5px 15px 15px;
+    transition: all 0.2s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+    &_active {
+      background-color: $primary;
+      border: 1px solid white;
+    }
+
+    &:hover {
+      background-color: $primary;
+      border: 1px solid white;
+    }
+
+    @media (max-width: 991px) {
+      padding: 15px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      // font-size: 14px;
+      // font-weight: 300;
+      // padding: 15px 10px;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+.show-f {
+  display: flex;
+}
+
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

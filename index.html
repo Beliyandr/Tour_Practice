@@ -19,7 +19,7 @@
       <header class="navbar navbar__mobile_fixed">
         <div class="container">
           <div class="navbar-top">
-            <a class="logo">
+            <a class="logo" href="#">
               <img src="img/horizont-logo.svg" alt="logo: Best Tour Plan" class="logo__image" />
             </a>
             <form action="#" class="search navbar__search navbar__search--mobile_hidden">
@@ -209,6 +209,41 @@
             <input class="subscribe__input" placeholder="Your email address" />
             <button class="subscribe__button">Send</button>
           </form>
+        </div>
+      </section>
+      <section class="tabs">
+        <div class="container">
+          <div class="tabs__wrapper">
+            <div class="tabs__content">
+              <div class="tabs__images">
+                <img
+                  src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/30605927.jpg?k=aaa7a4938dca103680e8d9c6c677cd474a6e643915562f87d98570fad00a1fb7&o=&hp=1"
+                  alt="image: Отели"
+                />
+                <img
+                  src="https://cdn.riastatic.com/docs/dom/support/4/aa/7ceb49d64a249caaff6e27380756b.jpg"
+                  alt="image: Аппартаменты/квартиры"
+                />
+                <img
+                  src="https://www.atorus.ru/sites/default/files/upload/image/TOP10/4002/%D0%B1%D1%80%D0%B8%D0%B4%D0%B6.jpg"
+                  alt="image: Курортные отели"
+                />
+                <img
+                  src="https://n1s1.elle.ru/27/b4/80/27b4803820633d71921f9db4df3464aa/728x486_1_95fc439347dd6258385a922fffc4f013@1000x667_0xd42ee42a_7152009391404377521.jpeg"
+                  alt="image: Виллы"
+                />
+              </div>
+              <div class="tabs__change">
+                <h3 class="tabs__title">Выберите тип размещения:</h3>
+                <ul class="tabs__items">
+                  <li class="tabs__item tabs__item_active">Отели</li>
+                  <li class="tabs__item">Аппартаменты/квартиры</li>
+                  <li class="tabs__item">Курортные отели</li>
+                  <li class="tabs__item">Виллы</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="reviews">
@@ -589,6 +624,10 @@
 
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
+
+    <script src="js/tabs.js"></script>
+    <script src="js/timeout_interval.js"></script>
+    <script src="js/date.js"></script>
 
     <script src="js/modal_jq.js"></script>
     <script src="js/validate_form.js"></script>

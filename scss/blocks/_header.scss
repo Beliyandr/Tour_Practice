@@ -41,6 +41,7 @@
 }
 .logo {
   max-width: 177px;
+  cursor: pointer;
 }
 .search {
   display: flex;
@@ -68,6 +69,7 @@
     top: 0;
     border: none;
     background: $primary;
+    cursor: pointer;
   }
 }
 
