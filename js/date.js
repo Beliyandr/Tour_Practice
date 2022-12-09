@@ -11,5 +11,5 @@ const now = new Date();
 
 //! Setter - установка даты
 
-console.log(now.setHours(18));
-console.log(now);
+// console.log(now.setHours(18));
+// console.log(now);
